@@ -1,2 +1,11 @@
 numpy
 pandas
+matplotlib
+seaborn
+scikit-learn
+catboost
+mysql-connector-python
+python-dotenv
+pymysql
+xgboost
+dill
