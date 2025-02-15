@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from src.mlproject.logger import logging
 from  src.mlproject.exception import CustomException
-
+from src.mlproject.components.data_transformation import DataTransformation
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
@@ -31,7 +31,7 @@ class DataIngestion:
 
             ##train test split initiated
             logging.info('Initiating train test split')
-            train_set,test_set=train_test_split(df,test_Size=0.2,random_state=42)
+            train_set,test_set=train_test_split(df,test_size=0.2,random_state=42)
 
             ##save train and test datasets
             train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
@@ -43,6 +43,7 @@ class DataIngestion:
             )
 
         except Exception as e:
+            logging.error(f"Error occurred: {str(e)}")
             raise CustomException(e,sys)
 
 
