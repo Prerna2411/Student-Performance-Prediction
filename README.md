@@ -4,8 +4,11 @@ This project aims to predict student performance based on various features such 
 🛠️ Tech Stack
 
 Programming Language: Python
+
 Machine Learning: Scikit-learn, XGBoost, CatBoost, AdaBoost,Linear Regression,RandomForest
+
 Frameworks: Flask (for API development)
+
 Frontend (Optional): Streamlit / React
 
 
