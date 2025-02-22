@@ -12,7 +12,10 @@ Frontend (Optional): Streamlit / React
 🚀 Features
 
 ✅ Data Preprocessing & Feature Engineering
+
 ✅ Model Training & Hyperparameter Tuning
+
 ✅ Performance Evaluation (R² Score, MSE, RMSE)
+
 ✅ Flask API for Predictions
 
