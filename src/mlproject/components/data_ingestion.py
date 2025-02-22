@@ -5,6 +5,9 @@ from src.mlproject.logger import logging
 from  src.mlproject.exception import CustomException
 from src.mlproject.components.data_transformation import DataTransformation
 from sklearn.model_selection import train_test_split
+
+from src.mlproject.components.model_trainer import ModelTrainerConfig
+from src.mlproject.components.model_trainer import ModelTrainer
 from dataclasses import dataclass
 
 @dataclass
@@ -52,4 +55,10 @@ if __name__=="__main__":
     obj=DataIngestion()
     train_data,test_data=obj.initiate_config()
     data_transformation=DataTransformation()
-    data_transformation.initiate_data_transformation(train_data,test_data)
+    train_array,test_array=data_transformation.initiate_data_transformation(train_data,test_data)
+    
+    modeltrainer=ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_array,test_array))
+
+
+    
