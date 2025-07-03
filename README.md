@@ -30,20 +30,33 @@ This project aims to predict student performance based on various features such 
 ## 📁 Project Structure
 
 ├── .github/workflows/ # Azure deployment CI/CD workflows
+
 ├── .vscode/ # VSCode settings
+
 ├── artifacts/ # Contains saved model artifacts
+
 │ └── model/
 ├── notebook/ # Jupyter notebooks for EDA, model training
+
 ├── src/ # Source scripts
 │ └── model/
+
 ├── templates/ # HTML templates for frontend
+
 ├── .gitignore # Ignore config
+
 ├── Dockerfile # Docker setup
+
 ├── README.md # Project documentation
+
 ├── app.py # Flask application
+
 ├── main.py # Core pipeline logic
+
 ├── requirements.txt # Python dependencies
+
 ├── setup.py # Project setup file
+
 ├── template.py # Template for dynamic HTML rendering
 
 
@@ -101,12 +114,17 @@ docker build -t student-performance-app .
 docker run -p 5000:5000 student-performance-app
 
 ☁️ Deployment
+
 Azure App Service deployment is configured via GitHub Actions.
 
 CI/CD workflow is located in .github/workflows/.
 
+
 🙌 Contributing
+
 Feel free to fork the repository, make enhancements, and create pull requests. All contributions are welcome!
+
+
 
 📄 License
 This project is licensed under the MIT License.
